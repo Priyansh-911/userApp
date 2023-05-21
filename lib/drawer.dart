@@ -132,7 +132,7 @@ class _MyDrawerState extends State<MyDrawer> {
             // ),
             ListTile(
               onTap: () {
-                nextScreen(context, Termspage());
+                nextScreen(context, TnccWidget());
               },
               leading: Icon(CupertinoIcons.settings_solid, color: Colors.white),
               title: Text("Terms and conditions",

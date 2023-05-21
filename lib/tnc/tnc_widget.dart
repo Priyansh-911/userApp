@@ -1,37 +1,11 @@
-// import 'package:flutter/material.dart';
-
-// import 'drawer.dart';
-
-// class Termspage extends StatelessWidget {
-//   const Termspage({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(
-//         backgroundColor: Theme.of(context).primaryColor,
-//         elevation: 0,
-//         title: const Text(
-//           "MOVEASY",
-//           style: TextStyle(
-//               color: Colors.white, fontSize: 27, fontWeight: FontWeight.bold),
-//         ),
-//       ),
-//       drawer: MyDrawer(),
-//       body: Container(
-//         child: Center(child: Text('TNC')),
-//       ),
-//     );
-//   }
-// }
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
-import 'tnc/tncc_model.dart';
-export 'tnc/tncc_model.dart';
+import 'tncc_model.dart';
+export 'tncc_model.dart';
 
 class TnccWidget extends StatefulWidget {
   const TnccWidget({Key? key}) : super(key: key);
@@ -144,34 +118,6 @@ class _TnccWidgetState extends State<TnccWidget> {
                           children: [
                             Text(
                               '  3.  The data input by the users of \n       this apk is completely safe \n       under the rules and norms of\n       government.\n',
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyMedium
-                                  .override(
-                                    fontFamily: 'Readex Pro',
-                                    fontSize: 17,
-                                  ),
-                            ),
-                          ],
-                        ),
-                        Row(
-                          mainAxisSize: MainAxisSize.max,
-                          children: [
-                            Text(
-                              '  4.  The data input by the users of \n       this apk is completely safe \n       under the rules and norms of\n       government.\n',
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyMedium
-                                  .override(
-                                    fontFamily: 'Readex Pro',
-                                    fontSize: 17,
-                                  ),
-                            ),
-                          ],
-                        ),
-                        Row(
-                          mainAxisSize: MainAxisSize.max,
-                          children: [
-                            Text(
-                              '  5.  The users are requested not \n       to share their information \n       withanmyone else\n       ',
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
