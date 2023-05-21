@@ -65,7 +65,7 @@ class _MyDrawerState extends State<MyDrawer> {
         "https://media.istockphoto.com/id/1209654046/vector/user-avatar-profile-icon-black-vector-illustration.jpg?s=612x612&w=0&k=20&c=EOYXACjtZmZQ5IsZ0UUp1iNmZ9q2xl1BD1VvN6tZ2UI=";
     return Drawer(
       child: Container(
-        color: Color.fromARGB(255, 49, 29, 83),
+        color: Color.fromARGB(222, 199, 108, 62),
         child: ListView(
           children: [
             DrawerHeader(
@@ -100,33 +100,36 @@ class _MyDrawerState extends State<MyDrawer> {
                 nextScreen(context, MyApp());
               },
               leading: Icon(CupertinoIcons.home, color: Colors.white),
-              title: Text("HOME",
+              title: Text("Home",
                   textScaleFactor: 1.2, style: TextStyle(color: Colors.white)),
             ),
 
             ListTile(
               onTap: () {
-                nextScreenReplace(
-                    context,
-                    ProfilePage(
-                      userName: userName,
-                      email: email,
-                    ));
+                nextScreen(context, Profile1Widget());
               },
+              // onTap: () {
+              //     nextScreenReplace(
+              //         context,
+              //         Profile1Widget(
+              //           userName: userName,
+              //           email: email,
+              //         ));
+              // },
               leading:
                   Icon(CupertinoIcons.profile_circled, color: Colors.white),
-              title: Text("PROFILE",
+              title: Text("Profile",
                   textScaleFactor: 1.2, style: TextStyle(color: Colors.white)),
             ),
 
-            ListTile(
-              onTap: () {
-                nextScreen(context, Contactus());
-              },
-              leading: Icon(CupertinoIcons.mail_solid, color: Colors.white),
-              title: Text("Contact us",
-                  textScaleFactor: 1.2, style: TextStyle(color: Colors.white)),
-            ),
+            // ListTile(
+            //   onTap: () {
+            //     nextScreen(context, Contactus());
+            //   },
+            //   leading: Icon(CupertinoIcons.mail_solid, color: Colors.white),
+            //   title: Text("Contact us",
+            //       textScaleFactor: 1.2, style: TextStyle(color: Colors.white)),
+            // ),
             ListTile(
               onTap: () {
                 nextScreen(context, Termspage());
